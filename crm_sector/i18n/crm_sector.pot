@@ -1,13 +1,11 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#   * crm_sector
+#	* crm_sector
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-21 09:52+0000\n"
-"PO-Revision-Date: 2015-12-21 09:52+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -45,7 +43,8 @@ msgid "Sector"
 msgstr ""
 
 #. module: crm_sector
-#: code:addons/crm_sector/models/crm_lead.py:21
+#: code:addons/crm_sector/models/crm_lead.py:22
 #, python-format
 msgid "The secondary sectors must be different from the main sector."
 msgstr ""
+

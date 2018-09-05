@@ -6,6 +6,7 @@ CRM addons for Odoo
 ===================
 
 [//]: # (addons)
+
 Available addons
 ----------------
 addon | version | summary
@@ -25,7 +26,7 @@ addon | version | summary
 [crm_lead_sale_link](crm_lead_sale_link/) | 8.0.1.0.0 | CRM Lead Sale Link
 [crm_lead_second_lastname](crm_lead_second_lastname/) | 8.0.1.0.0 | Specify second lastname directly in the lead/opportunity
 [crm_lead_supplier](crm_lead_supplier/) | 8.0.1.1.0 | Add fields to know if leads are suppliers too
-[crm_lead_vat](crm_lead_vat/) | 8.0.1.1.0 | Add VAT field to leads
+[crm_lead_vat](crm_lead_vat/) | 8.0.1.1.1 | Add VAT field to leads
 [crm_lead_website](crm_lead_website/) | 8.0.1.0.0 | Add Website field to leads
 [crm_location](crm_location/) | 8.0.1.0.0 | CRM location
 [crm_phonecall_category](crm_phonecall_category/) | 8.0.1.0.0 | Show the already-existing field in tree and search views
@@ -37,7 +38,9 @@ addon | version | summary
 [marketing_crm_partner](marketing_crm_partner/) | 8.0.1.0.0 | Copy tracking fields from leads to partners
 [mass_mailing_partner](mass_mailing_partner/) | 8.0.2.1.0 | Link partners with mass-mailing
 [newsletter](newsletter/) | 8.0.2.0.0 | Send newsletters to customers, employees or other entities
+[newsletter_email_template_qweb](newsletter_email_template_qweb/) | 8.0.1.0.0 | Glue module for newsletter and email_template_qweb
 [partner_withdrawal](partner_withdrawal/) | 8.0.1.0.0 | Partner membership withdrawal
+
 
 Unported addons
 ---------------

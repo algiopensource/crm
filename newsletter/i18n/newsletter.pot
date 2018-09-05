@@ -6,8 +6,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-05 12:14+0000\n"
-"PO-Revision-Date: 2015-02-05 12:14+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,7 +19,20 @@ msgid "${object.subject}"
 msgstr ""
 
 #. module: newsletter
-#: view:email_template.preview:0
+#: model:email.template,body_html:newsletter.email_template_newsletter_default
+msgid "${object.text_intro_html or ''}\n"
+"%for topic in object.topic_ids:\n"
+"<div>\n"
+"<h2>${topic.title}</h2>\n"
+"<div>${topic.text_html}</div>\n"
+"</div>\n"
+"%endfor\n"
+"${object.text_outro_html or ''}\n"
+""
+msgstr ""
+
+#. module: newsletter
+#: view:email_template.preview:newsletter.email_template_preview_form
 msgid "Close"
 msgstr ""
 
@@ -40,6 +51,13 @@ msgid "Created on"
 msgstr ""
 
 #. module: newsletter
+#: field:newsletter.newsletter,display_name:0
+#: field:newsletter.topic,display_name:0
+#: field:newsletter.type,display_name:0
+msgid "Display Name"
+msgstr ""
+
+#. module: newsletter
 #: field:newsletter.type,domain:0
 msgid "Domain"
 msgstr ""
@@ -55,7 +73,7 @@ msgid "Editor"
 msgstr ""
 
 #. module: newsletter
-#: view:email_template.preview:0
+#: view:email_template.preview:newsletter.email_template_preview_form
 msgid "Email Preview"
 msgstr ""
 
@@ -97,8 +115,10 @@ msgid "Intro"
 msgstr ""
 
 #. module: newsletter
-#: field:newsletter.newsletter,text_intro_plain:0
-msgid "Intro (plain)"
+#: field:newsletter.newsletter,__last_update:0
+#: field:newsletter.topic,__last_update:0
+#: field:newsletter.type,__last_update:0
+msgid "Last Modified on"
 msgstr ""
 
 #. module: newsletter
@@ -121,6 +141,11 @@ msgid "Manager"
 msgstr ""
 
 #. module: newsletter
+#: field:newsletter.newsletter,may_send:0
+msgid "May send"
+msgstr ""
+
+#. module: newsletter
 #: field:newsletter.type,model:0
 msgid "Model"
 msgstr ""
@@ -131,14 +156,21 @@ msgid "Name"
 msgstr ""
 
 #. module: newsletter
+#: model:ir.model,name:newsletter.model_newsletter_newsletter
 #: model:ir.module.category,name:newsletter.module_category_newsletter
-#: view:newsletter.newsletter:0
+#: view:newsletter.newsletter:newsletter.form_newsletter
 #: field:newsletter.topic,newsletter_id:0
 msgid "Newsletter"
 msgstr ""
 
 #. module: newsletter
-#: view:newsletter.type:0
+#: model:ir.model,name:newsletter.model_newsletter_topic
+msgid "Newsletter topic"
+msgstr ""
+
+#. module: newsletter
+#: model:ir.model,name:newsletter.model_newsletter_type
+#: view:newsletter.type:newsletter.form_newsletter_type
 msgid "Newsletter type"
 msgstr ""
 
@@ -161,29 +193,19 @@ msgid "Outro"
 msgstr ""
 
 #. module: newsletter
-#: field:newsletter.newsletter,text_outro_plain:0
-msgid "Outro (plain)"
-msgstr ""
-
-#. module: newsletter
-#: field:newsletter.newsletter,plaintext_mode:0
-#: field:newsletter.topic,plaintext_mode:0
-#: field:newsletter.type,plaintext_mode:0
-msgid "Plaintext mode"
-msgstr ""
-
-#. module: newsletter
-#: view:newsletter.newsletter:0
-msgid "Test newsletter"
-msgstr ""
-
-#. module: newsletter
-#: view:newsletter.newsletter:0
+#: view:newsletter.newsletter:newsletter.form_newsletter
 msgid "Preview"
 msgstr ""
 
 #. module: newsletter
-#: view:newsletter.newsletter:0
+#: code:addons/newsletter/model/newsletter_type.py:49
+#, python-format
+msgid "Recipients"
+msgstr ""
+
+#. module: newsletter
+#: view:email_template.preview:newsletter.email_template_preview_form
+#: view:newsletter.newsletter:newsletter.form_newsletter
 msgid "Send"
 msgstr ""
 
@@ -203,8 +225,8 @@ msgid "Sent"
 msgstr ""
 
 #. module: newsletter
-#: view:newsletter.newsletter:0
-#: view:newsletter.type:0
+#: view:newsletter.newsletter:newsletter.form_newsletter
+#: view:newsletter.type:newsletter.form_newsletter_type
 msgid "Show recipient objects"
 msgstr ""
 
@@ -219,6 +241,16 @@ msgid "Subject"
 msgstr ""
 
 #. module: newsletter
+#: view:newsletter.newsletter:newsletter.form_newsletter
+msgid "Test newsletter"
+msgstr ""
+
+#. module: newsletter
+#: field:email_template.preview,newsletter_test_recipient:0
+msgid "Test recipient"
+msgstr ""
+
+#. module: newsletter
 #: selection:newsletter.newsletter,state:0
 msgid "Testing"
 msgstr ""
@@ -226,11 +258,6 @@ msgstr ""
 #. module: newsletter
 #: field:newsletter.topic,text_html:0
 msgid "Text"
-msgstr ""
-
-#. module: newsletter
-#: field:newsletter.topic,text_plain:0
-msgid "Text (plain)"
 msgstr ""
 
 #. module: newsletter
@@ -254,23 +281,18 @@ msgid "Type"
 msgstr ""
 
 #. module: newsletter
-#: selection:newsletter.newsletter,plaintext_mode:0
-#: selection:newsletter.topic,plaintext_mode:0
-#: selection:newsletter.type,plaintext_mode:0
-msgid "from HTML"
+#: code:addons/newsletter/model/newsletter_newsletter.py:137
+#, python-format
+msgid "You can't delete sent newsletters!"
 msgstr ""
 
 #. module: newsletter
-#: model:ir.model,name:newsletter.model_newsletter_newsletter
-msgid "newsletter.newsletter"
+#: view:email_template.preview:newsletter.email_template_preview_form
+msgid "or"
 msgstr ""
 
 #. module: newsletter
-#: model:ir.model,name:newsletter.model_newsletter_topic
-msgid "newsletter.topic"
+#: view:email_template.preview:newsletter.email_template_preview_form
+msgid "you@mail.com"
 msgstr ""
 
-#. module: newsletter
-#: model:ir.model,name:newsletter.model_newsletter_type
-msgid "newsletter.type"
-msgstr ""

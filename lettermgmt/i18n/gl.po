@@ -1,20 +1,21 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * lettermgmt
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: crm (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-02 14:15+0000\n"
-"PO-Revision-Date: 2016-11-25 14:58+0000\n"
+"POT-Creation-Date: 2017-11-18 02:26+0000\n"
+"PO-Revision-Date: 2017-11-23 23:27+0000\n"
 "Last-Translator: OCA Transbot <transbot@odoo-community.org>\n"
-"Language-Team: Galician (http://www.transifex.com/oca/OCA-crm-8-0/language/gl/)\n"
+"Language-Team: Galician (http://www.transifex.com/oca/OCA-crm-8-0/language/"
+"gl/)\n"
+"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: gl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: lettermgmt
@@ -52,7 +53,8 @@ msgid ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "            Click to create a letter channel.\n"
 "        </p><p>\n"
-"            Use channels to specify the different ways a letter can be sent or received.\n"
+"            Use channels to specify the different ways a letter can be sent "
+"or received.\n"
 "            Eg: The Post, Fax, Email..\n"
 "        </p>\n"
 "      "
@@ -174,7 +176,7 @@ msgstr ""
 #. module: lettermgmt
 #: selection:res.letter,state:0
 msgid "Draft"
-msgstr ""
+msgstr "Borrador"
 
 #. module: lettermgmt
 #: field:res.letter,expeditor_ref:0
@@ -392,7 +394,7 @@ msgstr ""
 #: field:letter.folder,name:0 field:letter.reassignment,name:0
 #: field:letter.type,name:0
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #. module: lettermgmt
 #: field:res.letter,number:0
@@ -547,7 +549,7 @@ msgstr ""
 #. module: lettermgmt
 #: field:res.letter,size:0
 msgid "Size"
-msgstr ""
+msgstr "Tamaño"
 
 #. module: lettermgmt
 #: help:res.letter,size:0
@@ -557,7 +559,7 @@ msgstr ""
 #. module: lettermgmt
 #: field:res.letter,state:0
 msgid "State"
-msgstr ""
+msgstr "Estado"
 
 #. module: lettermgmt
 #: field:res.letter,name:0
@@ -612,7 +614,7 @@ msgstr ""
 #. module: lettermgmt
 #: field:res.letter,type_id:0
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #. module: lettermgmt
 #: help:res.letter,type_id:0
@@ -622,7 +624,7 @@ msgstr ""
 #. module: lettermgmt
 #: field:res.letter,message_unread:0
 msgid "Unread Messages"
-msgstr ""
+msgstr "Mensaxes sen ler"
 
 #. module: lettermgmt
 #: model:res.groups,name:lettermgmt.group_letter_thread
